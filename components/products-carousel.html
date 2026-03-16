@@ -1,0 +1,24 @@
+<section class="mx-auto max-w-7xl px-4 py-8">
+  <div class="mb-5 flex items-center justify-between">
+    <h2 class="text-xl font-bold text-black">Lançamentos</h2>
+    <a href="#" class="text-sm font-semibold text-[#303030]">Ver mais</a>
+  </div>
+
+  <div class="relative">
+    <button class="products-prev absolute left-[-14px] top-1/2 z-10 hidden -translate-y-1/2 lg:flex">
+      <img src="./assets/botao-seta.png" alt="Anterior" class="h-10 w-10 object-contain" />
+    </button>
+
+    <div class="lg:px-8">
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper pb-4" data-product-list></div>
+      </div>
+    </div>
+
+    <button class="products-next absolute right-[-14px] top-1/2 z-10 hidden -translate-y-1/2 lg:flex">
+      <img src="./assets/botao-seta.png" alt="Proximo" class="h-10 w-10 -scale-x-100 object-contain" />
+    </button>
+  </div>
+
+  <div class="products-pagination mt-4 flex justify-center [--swiper-pagination-color:#000] [--swiper-pagination-bullet-inactive-color:#000] [--swiper-pagination-bullet-inactive-opacity:0.3]"></div>
+</section>

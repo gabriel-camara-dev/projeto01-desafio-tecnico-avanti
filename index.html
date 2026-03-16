@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovation class</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="lib/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      html,
+      body,
+      button,
+      input,
+      select,
+      textarea {
+        font-family: "Nunito", sans-serif;
+      }
+    </style>
+    
+  </head>
+  <body class="bg-white text-black">
+    <div data-component="components/header.html"></div>
+
+    <main class="pb-12">
+      <div data-component="components/supersale.html"></div>
+      <div id="products-carousel" data-component="components/products-carousel.html"></div>
+      <div data-component="components/section1.html"></div>
+      <div data-component="components/section2.html"></div>
+      <div data-component="components/products-carousel.html"></div>
+      <div data-component="components/section1.html"></div>
+      <div data-component="components/contact-banner.html"></div>
+      <div data-component="components/footer.html"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/template-products.js"></script>
+    <script src="js/template-nav.js"></script>
+    <script src="js/header-menu.js"></script>
+    <script src="js/search.js"></script>
+    <script src="lib/swiper.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

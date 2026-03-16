@@ -1,0 +1,150 @@
+<header class="bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+  <div
+    class="bg-[#005CFF] px-3 py-1 text-center text-[11px] font-bold leading-tight text-white sm:text-[14px]"
+  >
+    Ganhe <span class="rounded bg-[#6220C1] px-1.5">R$10,00</span> de desconto
+    no seu primeiro pedido. Utilize o cupom DESCONTO10
+  </div>
+
+  <div class="mx-auto max-w-[1248px] px-4">
+    <div
+      class="flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:py-[18px]"
+    >
+      <div class="flex items-center justify-between lg:w-[180px]">
+        <button type="button" class="shrink-0 lg:hidden">
+          <img src="./assets/menu.png" alt="Abrir menu" class="h-6 w-6" />
+        </button>
+        <img
+          src="./assets/logo.png"
+          alt="Logo AVANTI"
+          class="h-auto w-[152px] lg:w-auto"
+        />
+        <button
+          type="button"
+          class="relative flex h-8 w-8 shrink-0 items-center justify-center text-black lg:hidden"
+        >
+          <img src="./assets/carrinho.png" alt="Carrinho" />
+          <span
+            class="absolute right-[-3px] top-[-3px] flex h-[16px] min-w-[16px] items-center justify-center rounded-full bg-[#005CFF] px-1 text-[10px] font-bold text-white"
+            >2</span
+          >
+        </button>
+      </div>
+      <div class="relative w-full pb-6 lg:flex-1 lg:max-w-[594px] lg:pb-0">
+        <div class="relative rounded-lg border px-4 py-2 lg:px-6 lg:py-3">
+          <input
+            data-search-input
+            class="w-full pr-10 placeholder:text-black focus:outline-none"
+            type="text"
+            placeholder="Digite aqui o que você procura"
+          />
+          <button
+            type="button"
+            data-search-button
+            class="absolute right-4 top-1/2 -translate-y-1/2 shrink-0"
+          >
+            <img src="./assets/lupa.png" alt="Buscar" />
+          </button>
+        </div>
+        <p
+          data-search-result
+          class="absolute left-4 top-[36px] hidden pt-2 text-[12px] text-[#303030] lg:top-[44px]"
+        ></p>
+      </div>
+
+      <div class="hidden items-center gap-7 lg:flex">
+        <div class="flex items-center gap-[10px] text-black">
+          <img src="./assets/profile.png" alt="" />
+          <div class="text-[13px] leading-[1.05]">
+            <p>Olá,</p>
+            <p class="font-semibold">Nome cliente!</p>
+          </div>
+        </div>
+
+        <button
+          class="relative flex h-8 w-8 items-center justify-center text-black"
+        >
+          <img src="./assets/carrinho.png" alt="" />
+          <span
+            class="absolute right-[-3px] top-[-3px] flex h-[16px] min-w-[16px] items-center justify-center rounded-full bg-[#005CFF] px-1 text-[10px] font-bold text-white"
+            >2</span
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative">
+    <div
+      class="overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+    >
+      <nav
+        class="mx-auto hidden min-w-max max-w-[1248px] items-center gap-3 whitespace-nowrap px-4 py-[10px] text-[13px] text-black lg:flex xl:gap-4 xl:text-[14px]"
+      >
+        <button
+          type="button"
+          data-menu-trigger="all"
+          class="menu-trigger flex flex-none items-center gap-2 whitespace-nowrap px-1 text-left"
+        >
+          <img class="relative top-[-2px]" src="./assets/menu.png" alt="Menu" />
+          <span>Todas as Categorias</span>
+        </button>
+        <div class="contents" data-nav-departments></div>
+      </nav>
+    </div>
+
+    <div
+      data-menu-panel="all"
+      class="absolute left-0 right-0 top-full z-50 mx-auto hidden w-full max-w-[1248px] px-4 pb-4"
+    >
+      <div class="mt-2 flex p-3 shadow-[0_1px_8px_rgba(0,0,0,0.08)] bg-white">
+        <div
+          class="max-h-[300px] w-[195px] shrink-0 overflow-y-auto border-r border-[#EEEEEE] pr-3 text-[14px] text-[#303030] [scrollbar-width:thin] [&::-webkit-scrollbar]:w-[4px] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#C9C9C9]"
+        >
+          <div class="space-y-2" data-all-panel-departments></div>
+        </div>
+
+        <div
+          class="flex flex-1 items-stretch gap-6 px-6 text-[14px] text-[#626262]"
+        >
+          <div class="flex-1" data-all-panel-categories></div>
+
+          <a
+            href="#products-carousel"
+            class="block w-[236px] shrink-0 self-stretch overflow-hidden rounded-[10px]"
+          >
+            <img
+              src="./assets/panel-img.png"
+              alt="Acessar carrossel de produtos"
+              class="h-full w-full object-cover"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      data-menu-panel="dept"
+      class="absolute left-0 right-0 top-full z-50 mx-auto hidden w-full max-w-[1248px] px-4 pb-4"
+    >
+      <div class="mt-2 flex bg-white p-3 shadow-[0_1px_8px_rgba(0,0,0,0.08)]">
+        <div
+          class="flex flex-1 items-stretch gap-6 px-2 text-[14px] text-[#626262]"
+        >
+          <div class="flex-1" data-dept-panel-categories></div>
+
+          <a
+            href="#products-carousel"            class="block w-[236px] shrink-0 self-stretch overflow-hidden rounded-[10px]"
+            aria-label="Ir para carrossel de produtos"
+          >
+            <img
+              src="./assets/panel-img.png"
+              alt="Acessar carrossel de produtos"
+              class="h-full w-full object-cover"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
